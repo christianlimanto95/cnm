@@ -12,6 +12,7 @@ class Home extends General_controller {
 	
 	public function index()
 	{
+        parent::load_additional_js("velocity.min");
 		$data = array(
             "title" => "CNM"
 		);

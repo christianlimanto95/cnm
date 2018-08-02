@@ -16,6 +16,23 @@
     color: white;
 }
 
+.logo-header {
+    display: block;
+    width: 40px;
+    height: 50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.logo-header.show {
+    opacity: 1;
+}
+
 .header-menu-container {
     position: fixed;
     display: inline-block;
@@ -54,22 +71,6 @@
     width: 40px;
 }
 
-.logo {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 400px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    z-index: 100;
-}
-
 .container {
     width: 100vw;
     height: 100vh;
@@ -101,4 +102,12 @@
     background-size: 100%;
     background-repeat: no-repeat;
     margin-left: 5px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 40px;
+    left: 30px;
+    font-size: 9pt;
+    line-height: 20px;
 }

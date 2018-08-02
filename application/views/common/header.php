@@ -10,20 +10,18 @@
         echo "<meta name='description' content='" . $meta_description . "' />";
         echo "<meta name='og:description' content='" . $meta_description . "' />";
     } ?>
-    <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="702991525631-258gshg35oef1lfhnt21hohro5rjito9.apps.googleusercontent.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    
-	<link rel="stylesheet" href="<?php echo base_url("assets/css/common/default.css?v=9"); ?>" />
-	<link rel="stylesheet" href="<?php echo base_url("assets/css/" . $page_name . ".css?v=34"); ?>" />
+
+	<link rel="stylesheet" href="<?php echo base_url("assets/css/common/default.css"); ?>" />
+	<link rel="stylesheet" href="<?php echo base_url("assets/css/" . $page_name . ".css"); ?>" />
     <?php echo $additional_css; ?>
 </head>
 <body>
+<div class="logo-header" style="background-image: url(<?php echo base_url("assets/icons/logo.jpg"); ?>);"></div>
 <div class="header-menu-container">
-    <a href="#" class="header-menu"><span class="white-line"></span>BUY</a><br>
-    <a href="#" class="header-menu"><span class="white-line"></span>SELL</a><br>
-    <a href="#" class="header-menu"><span class="white-line"></span>TESTIMONY</a><br>
-    <a href="#" class="header-menu"><span class="white-line"></span>CONTACT US</a><br>
+    <a href="<?php echo base_url("buy"); ?>" class="header-menu" data-menu="1"><span class="white-line"></span>BUY</a><br>
+    <a href="<?php echo base_url("sell"); ?>" class="header-menu" data-menu="2"><span class="white-line"></span>SELL</a><br>
+    <a href="<?php echo base_url("testimony"); ?>" class="header-menu" data-menu="3"><span class="white-line"></span>TESTIMONY</a><br>
+    <a href="<?php echo base_url("contact"); ?>" class="header-menu" data-menu="4"><span class="white-line"></span>CONTACT US</a><br>
 </div>
 <script>
 var vw = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -39,5 +37,4 @@ if (vw < 1025) {
     isMobile = false;
 }
 </script>
-<div class="logo" style="background-image: url(<?php echo base_url("assets/icons/logo.jpg"); ?>);"></div>
 <div class="container">
