@@ -47,8 +47,8 @@
     color: white;
     text-decoration: none;
     margin-bottom: 10px;
-    letter-spacing: 3px;
-    font-size: 11pt;
+    letter-spacing: 2px;
+    font-size: 10pt;
     cursor: pointer;
 }
 
@@ -69,6 +69,24 @@
 
 .header-menu:hover .white-line {
     width: 40px;
+}
+
+.subtitle {
+    position: fixed;
+    top: 40px;
+    width: 100vw;
+    text-align: center;
+    font-size: 18pt;
+    font-weight: bold;
+    opacity: 0;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.subtitle.show {
+    opacity: 1;
+    -webkit-transition: all 0.2s 0.3s;
+    transition: all 0.2s 0.3s;
 }
 
 .container {

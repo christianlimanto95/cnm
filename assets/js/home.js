@@ -28,6 +28,36 @@ $(function() {
     });*/
 
     container.addEventListener("scroll", checkShowLogo);
+    var subtitle1 = $(".subtitle[data-menu='0']"), subtitle2 = $(".subtitle[data-menu='1']"), subtitle3 = $(".subtitle[data-menu='2']"), subtitle4 = $(".subtitle[data-menu='3']"), subtitle5 = $(".subtitle[data-menu='4']");
+    var section2Left = vw / 2, section3Left = vw + vw / 2, section4Left = vw * 2 + vw / 2, section5Left = vw * 3 + vw / 2;
+    container.addEventListener("scroll", function() {
+        if (container.scrollLeft >= 0 && container.scrollLeft < section2Left) {
+            if (!subtitle1.hasClass("show")) {
+                $(".subtitle.show").removeClass("show");
+                subtitle1.addClass("show");
+            }
+        } else if (container.scrollLeft >= section2Left && container.scrollLeft < section3Left) {
+            if (!subtitle2.hasClass("show")) {
+                $(".subtitle.show").removeClass("show");
+                subtitle2.addClass("show");
+            }
+        } else if (container.scrollLeft >= section3Left && container.scrollLeft < section4Left) {
+            if (!subtitle3.hasClass("show")) {
+                $(".subtitle.show").removeClass("show");
+                subtitle3.addClass("show");
+            }
+        } else if (container.scrollLeft >= section4Left && container.scrollLeft < section5Left) {
+            if (!subtitle4.hasClass("show")) {
+                $(".subtitle.show").removeClass("show");
+                subtitle4.addClass("show");
+            }
+        } else {
+            if (!subtitle5.hasClass("show")) {
+                $(".subtitle.show").removeClass("show");
+                subtitle5.addClass("show");
+            }
+        }
+    });
 
     $(".header-menu").on("click", function(e) {
         e.preventDefault();

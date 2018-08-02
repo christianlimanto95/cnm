@@ -23,6 +23,11 @@
     <a href="<?php echo base_url("testimony"); ?>" class="header-menu" data-menu="3"><span class="white-line"></span>TESTIMONY</a><br>
     <a href="<?php echo base_url("contact"); ?>" class="header-menu" data-menu="4"><span class="white-line"></span>CONTACT US</a><br>
 </div>
+<div class="subtitle show" data-menu="0"></div>
+<div class="subtitle" data-menu="1">BUY</div>
+<div class="subtitle" data-menu="2">SELL</div>
+<div class="subtitle" data-menu="3">TESTIMONY</div>
+<div class="subtitle" data-menu="4">CONTACT</div>
 <script>
 var vw = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 var vh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
