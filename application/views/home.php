@@ -31,7 +31,7 @@
         <img class="testimony" src="<?php echo base_url("assets/images/testimony_4.jpg"); ?>" />
     </div>
 </div><div class="section section-5" data-menu="4">
-    <div class="section-inner">
+    <div class="section-inner section-inner-contact">
         <pre class="contact-info">Michael Pranata
 
 Darmo Park I Blok 3C - 12A

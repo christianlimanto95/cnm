@@ -1,14 +1,11 @@
 var container = document.getElementsByClassName("container")[0];
+var section2Left = vw / 2, section3Left = vw + vw / 2, section4Left = vw * 2 + vw / 2, section5Left = vw * 3 + vw / 2;
+
 $(function() {
     var logo = $(".logo");
-    $(window).on('mousewheel DOMMouseScroll', function(event){
-        if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-            container.scrollLeft -= 40;
-        }
-        else {
-            container.scrollLeft += 40;
-        }
-    });
+    if (!isMobile) {
+        $(window).on('mousewheel DOMMouseScroll', mouseWheelListener);
+    }
 
     /*container.addEventListener("scroll", function() {
         var scale = (vw - container.scrollLeft) / vw;
@@ -29,7 +26,7 @@ $(function() {
 
     container.addEventListener("scroll", checkShowLogo);
     var subtitle1 = $(".subtitle[data-menu='0']"), subtitle2 = $(".subtitle[data-menu='1']"), subtitle3 = $(".subtitle[data-menu='2']"), subtitle4 = $(".subtitle[data-menu='3']"), subtitle5 = $(".subtitle[data-menu='4']");
-    var section2Left = vw / 2, section3Left = vw + vw / 2, section4Left = vw * 2 + vw / 2, section5Left = vw * 3 + vw / 2;
+    
     container.addEventListener("scroll", function() {
         if (container.scrollLeft >= 0 && container.scrollLeft < section2Left) {
             if (!subtitle1.hasClass("show")) {
@@ -68,7 +65,26 @@ $(function() {
             container: container
         });
     });
+
+    $(window).on("resize", function() {
+        if (!isMobile) {
+            $(window).on('mousewheel DOMMouseScroll', mouseWheelListener);
+        } else {
+            $(window).off('mousewheel DOMMouseScroll', mouseWheelListener);
+        }
+
+        section2Left = vw / 2, section3Left = vw + vw / 2, section4Left = vw * 2 + vw / 2, section5Left = vw * 3 + vw / 2;
+    });
 });
+
+function mouseWheelListener(event) {
+    if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+        container.scrollLeft -= 40;
+    }
+    else {
+        container.scrollLeft += 40;
+    }
+}
 
 function checkShowLogo() {
     if (container.scrollLeft >= vw / 2) {

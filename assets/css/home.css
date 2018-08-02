@@ -7,15 +7,6 @@
 
 .logo {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -23,7 +14,6 @@
 .jasa-container {
     color: white;
     position: absolute;
-    top: 78vh;
     left: 0;
     text-align: center;
     width: 100%;
@@ -63,11 +53,157 @@
 .testimony {
     display: inline-block;
     vertical-align: top;
-    max-width: 200px;
-    max-height: 300px;
 }
 
 .contact-info {
     line-height: 25px;
     font-size: 14pt;
+}
+
+@media all and (max-width: 767px) {
+    .logo {
+        width: 64vw;
+        height: 75vw;
+        top: 43%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .jasa-container {
+        top: 122vw;
+    }
+
+    .jasa {
+        display: block;
+        font-size: 12pt;
+        margin-bottom: 10px;
+    }
+
+    .jasa-splitter {
+        display: none;
+    }
+
+    .section-inner {
+        width: 80vw;
+        white-space: normal;
+    }
+
+    .section-title {
+        font-size: 16pt;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+
+    .section-item {
+        font-size: 12pt;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+
+    .testimony-container {
+        width: 90vw;
+        height: 90vw;
+        overflow-y: auto;
+        padding-bottom: 20px;
+    }
+
+    .testimony {
+        display: block;
+        width: 90vw;
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .logo {
+        width: 60vw;
+        height: 70vw;
+        top: 43%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .jasa-container {
+        top: 98vw;
+    }
+
+    .jasa {
+        display: block;
+        font-size: 18pt;
+        margin-bottom: 10px;
+    }
+
+    .jasa-splitter {
+        display: none;
+    }
+
+    .section-inner {
+        width: 80vw;
+        white-space: normal;
+    }
+
+    .section-title {
+        font-size: 28pt;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+
+    .section-item {
+        font-size: 20pt;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+
+    .testimony-container {
+        width: 80vw;
+        height: 80vw;
+        overflow-y: auto;
+        padding-bottom: 20px;
+    }
+
+    .testimony {
+        display: block;
+        width: 80vw;
+        margin-bottom: 20px;
+    }
+
+    .section-inner-contact {
+        width: auto;
+    }
+
+    .contact-info {
+        font-size: 20pt;
+        line-height: 35px;
+    }
+}
+
+@media all and (min-width: 1025px) {
+    .logo {
+        width: 300px;
+        height: 400px;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .jasa-container {
+        top: 78vh;
+    }
+
+    .testimony {
+        max-width: 200px;
+        max-height: 300px;
+    }
 }
