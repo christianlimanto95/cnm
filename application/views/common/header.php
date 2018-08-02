@@ -20,10 +20,10 @@
 </head>
 <body>
 <div class="header-menu-container">
-    <a href="#" class="header-menu">BUY</a><br>
-    <a href="#" class="header-menu">SELL</a><br>
-    <a href="#" class="header-menu">TESTIMONY</a><br>
-    <a href="#" class="header-menu">CONTACT US</a><br>
+    <a href="#" class="header-menu"><span class="white-line"></span>BUY</a><br>
+    <a href="#" class="header-menu"><span class="white-line"></span>SELL</a><br>
+    <a href="#" class="header-menu"><span class="white-line"></span>TESTIMONY</a><br>
+    <a href="#" class="header-menu"><span class="white-line"></span>CONTACT US</a><br>
 </div>
 <script>
 var vw = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
