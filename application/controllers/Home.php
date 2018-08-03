@@ -14,7 +14,8 @@ class Home extends General_controller {
 	{
         parent::load_additional_js("velocity.min");
 		$data = array(
-            "title" => "CNM"
+            "title" => "CNM &mdash; Your Trading Solution",
+            "meta_description" => "Jasa Top Up Alipay | Transfer RMB | Jasa Bayar | Top Up Wechat | QUICK & 100% TRUSTED"
 		);
 		
 		parent::view("home", $data);

@@ -12,12 +12,12 @@
     } ?>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="<?php echo base_url("assets/css/common/default.css"); ?>" />
-	<link rel="stylesheet" href="<?php echo base_url("assets/css/" . $page_name . ".css"); ?>" />
+	<link rel="stylesheet" href="<?php echo base_url("assets/css/common/default.css?v=1"); ?>" />
+	<link rel="stylesheet" href="<?php echo base_url("assets/css/" . $page_name . ".css?v=1"); ?>" />
     <?php echo $additional_css; ?>
 </head>
 <body>
-<div class="logo-header" style="background-image: url(<?php echo base_url("assets/icons/logo.jpg"); ?>);"></div>
+<div class="logo-header" style="background-image: url(<?php echo base_url("assets/icons/logo_small.png"); ?>);"></div>
 <div class="header-menu-container">
     <a href="<?php echo base_url("buy"); ?>" class="header-menu" data-menu="1"><span class="white-line"></span>BUY</a><br>
     <a href="<?php echo base_url("sell"); ?>" class="header-menu" data-menu="2"><span class="white-line"></span>SELL</a><br>

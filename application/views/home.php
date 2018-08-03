@@ -1,5 +1,5 @@
 <div class="section section-1">
-<div class="logo" style="background-image: url(<?php echo base_url("assets/icons/logo.jpg"); ?>);"></div>
+<div class="logo" style="background-image: url(<?php echo base_url("assets/icons/logo.png"); ?>);"></div>
     <div class="jasa-container">
         <span class="jasa">Jasa Top Up Alipay</span>
         <span class="jasa-splitter">&#9899;</span>
