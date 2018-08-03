@@ -24,6 +24,8 @@
     opacity: 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    cursor: pointer;
+    z-index: 100;
 }
 
 .logo-header.show {
@@ -277,6 +279,7 @@
     .footer {
         bottom: 20px;
         left: 20px;
+        font-size: 8pt;
     }
 }
 

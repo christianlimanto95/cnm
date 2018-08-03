@@ -9,7 +9,13 @@ $(function() {
     }
 
     scrollContainer.one("click", function() {
+        scrollPosition = 1;
         setScrollTo(1);
+    });
+
+    $(".logo-header").on("click", function() {
+        scrollPosition = 0;
+        setScrollTo(0);
     });
 
     /*container.addEventListener("scroll", function() {

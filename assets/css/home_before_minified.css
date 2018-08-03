@@ -64,7 +64,7 @@
     .logo {
         width: 64vw;
         height: 64vw;
-        top: 43%;
+        top: 40%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
@@ -74,13 +74,13 @@
     }
 
     .jasa-container {
-        top: 115vw;
+        top: 110vw;
     }
 
     .jasa {
         display: block;
-        font-size: 12pt;
-        margin-bottom: 10px;
+        font-size: 10pt;
+        margin-bottom: 5px;
     }
 
     .jasa-splitter {
