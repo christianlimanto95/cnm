@@ -1,5 +1,8 @@
+var scrollContainer = $(".scroll-container");
 $(function() {
     initializeDefault();
+
+    $(".container").on("scroll", firstScroll);
 
     $(window).resize(function() {
         initializeDefault();
@@ -19,4 +22,12 @@ function initializeDefault() {
     } else {
         isMobile = false;
     }
+}
+
+function firstScroll() {
+    scrollContainer.addClass("hide");
+    scrollContainer.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
+        scrollContainer.addClass("hidden");
+    });
+    $(".container").off("scroll", firstScroll);
 }
