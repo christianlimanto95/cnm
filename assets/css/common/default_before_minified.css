@@ -16,6 +16,11 @@
     color: white;
 }
 
+body {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
 .logo-header {
     display: block;
     background-size: 100%;
