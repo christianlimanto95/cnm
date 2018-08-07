@@ -59,6 +59,10 @@
     vertical-align: top;
 }
 
+.faq {
+    line-height: 25px;
+}
+
 .contact-info {
     line-height: 25px;
     font-size: 14pt;
@@ -119,6 +123,11 @@
         display: block;
         width: 90vw;
         margin-bottom: 20px;
+    }
+
+    .faq-inner {
+        max-height: 110vw;
+        overflow-y: auto;
     }
 }
 

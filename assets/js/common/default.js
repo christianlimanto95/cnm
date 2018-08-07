@@ -1,4 +1,7 @@
 var scrollContainer = $(".scroll-container");
+var menuOpen = false;
+var body = $("body");
+var menuIconLine1 = $(".menu-icon-line-1");
 $(function() {
     initializeDefault();
 
@@ -7,6 +10,14 @@ $(function() {
         height: "+=" + scrollbarWidth + "px"
     });
     $(".container").on("scroll", firstScroll);
+
+    document.getElementById("menu-icon").addEventListener("click", function(e) {
+        if (!menuOpen) {
+            showMenuMobile();
+        } else {
+            closeMenuMobile();
+        }
+    });
 
     $(window).resize(function() {
         initializeDefault();
@@ -26,6 +37,25 @@ function initializeDefault() {
     } else {
         isMobile = false;
     }
+}
+
+function showMenuMobile() {
+    menuOpen = true;
+    menuIconLine1.off("webkitAnimationEnd oanimationend msAnimationEnd animationend");
+    body.removeAttr("class").addClass("fixed").addClass("menu-opening").addClass("menu-inside-showing");
+    menuIconLine1.one("webkitAnimationEnd oanimationend msAnimationEnd animationend", function(e) {
+        body.addClass("menu-opened").removeClass("menu-opening");
+    });
+}
+
+function closeMenuMobile() {
+    menuOpen = false;
+    body.removeClass("fixed");
+    menuIconLine1.off("webkitAnimationEnd oanimationend msAnimationEnd animationend");
+    body.addClass("menu-opened").removeClass("menu-opening").addClass("menu-closing");
+    menuIconLine1.one("webkitAnimationEnd oanimationend msAnimationEnd animationend", function(e) {
+        body.removeClass("menu-closing").removeClass("menu-opened").removeClass("menu-inside-showing");
+    });
 }
 
 function firstScroll() {

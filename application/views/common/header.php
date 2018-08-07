@@ -12,23 +12,34 @@
     } ?>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="<?php echo base_url("assets/css/common/default.css?v=4"); ?>" />
-	<link rel="stylesheet" href="<?php echo base_url("assets/css/" . $page_name . ".css?v=4"); ?>" />
+	<link rel="stylesheet" href="<?php echo base_url("assets/css/common/default.css?v=5"); ?>" />
+	<link rel="stylesheet" href="<?php echo base_url("assets/css/" . $page_name . ".css?v=5"); ?>" />
     <?php echo $additional_css; ?>
 </head>
 <body>
 <div class="logo-header" style="background-image: url(<?php echo base_url("assets/icons/logo_small.png"); ?>);"></div>
+<div class="menu-icon" id="menu-icon">
+    <div class="menu-icon-line menu-icon-line-1"></div>
+    <div class="menu-icon-line menu-icon-line-2"></div>
+    <div class="menu-icon-line menu-icon-line-3"></div>
+</div>
 <div class="header-menu-container">
-    <a href="<?php echo base_url("buy"); ?>" class="header-menu" data-menu="1"><span class="white-line"></span>BUY</a><br>
-    <a href="<?php echo base_url("sell"); ?>" class="header-menu" data-menu="2"><span class="white-line"></span>SELL</a><br>
-    <a href="<?php echo base_url("testimony"); ?>" class="header-menu" data-menu="3"><span class="white-line"></span>TESTIMONY</a><br>
-    <a href="<?php echo base_url("contact"); ?>" class="header-menu" data-menu="4"><span class="white-line"></span>CONTACT US</a><br>
+    <div class="header-menu-inner-container">
+        <a href="<?php echo base_url("what-we-do"); ?>" class="header-menu" data-menu="1"><span class="white-line"></span>WHAT WE DO</a><br>
+        <a href="<?php echo base_url("buy"); ?>" class="header-menu" data-menu="2"><span class="white-line"></span>BUY</a><br>
+        <a href="<?php echo base_url("sell"); ?>" class="header-menu" data-menu="3"><span class="white-line"></span>SELL</a><br>
+        <a href="<?php echo base_url("testimony"); ?>" class="header-menu" data-menu="4"><span class="white-line"></span>TESTIMONY</a><br>
+        <a href="<?php echo base_url("faq"); ?>" class="header-menu" data-menu="5"><span class="white-line"></span>FAQ</a><br>
+        <a href="<?php echo base_url("contact"); ?>" class="header-menu" data-menu="6"><span class="white-line"></span>CONTACT US</a><br>
+    </div>
 </div>
 <div class="subtitle show" data-menu="0"></div>
-<div class="subtitle" data-menu="1">BUY</div>
-<div class="subtitle" data-menu="2">SELL</div>
-<div class="subtitle" data-menu="3">TESTIMONY</div>
-<div class="subtitle" data-menu="4">CONTACT</div>
+<div class="subtitle" data-menu="1">WHAT WE DO</div>
+<div class="subtitle" data-menu="2">BUY</div>
+<div class="subtitle" data-menu="3">SELL</div>
+<div class="subtitle" data-menu="4">TESTIMONY</div>
+<div class="subtitle" data-menu="5">FAQ</div>
+<div class="subtitle" data-menu="6">CONTACT</div>
 <script>
 var vw = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 var vh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
