@@ -16,7 +16,9 @@ $(function() {
     $(".logo-header").on("click", function() {
         scrollPosition = 0;
         setScrollTo(0);
-        closeMenuMobile();
+        if (body.hasClass("menu-opened") || body.hasClass("menu-opening")) {
+            closeMenuMobile();
+        }
     });
 
     container.addEventListener("scroll", checkShowLogo);

@@ -1,5 +1,5 @@
 <div class="section section-1" data-menu="0">
-<div class="logo" style="background-image: url(<?php echo base_url("assets/icons/logo.png"); ?>);"></div>
+<div class="logo" style="background-image: url(<?php echo base_url("assets/icons/logo.png?v=1"); ?>);"></div>
     <div class="jasa-container">
         <span class="jasa">Jasa tt (transfer) RMB</span>
         <span class="jasa-splitter">&#9899;</span>
@@ -45,7 +45,7 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, wh
 
 <b>3. Lorem Ipsum is simply dummy text of the printing and typesetting industry</b>
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</pre>
-    </div>
+    <div class="bottom-shadow"></div></div>
 </div><div class="section section-7" data-menu="6">
     <div class="section-inner section-inner-contact">
         <pre class="contact-info">Michael Pranata
