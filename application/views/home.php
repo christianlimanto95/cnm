@@ -8,9 +8,26 @@
         <span class="jasa">Top Up Alipay Wechat</span>
     </div>
 </div><div class="section section-2" data-menu="1">
-    <div class="section-inner">
-        <div class="section-title">What We Do</div>
-        
+    <div class="section-inner what-we-do-inner">
+        <pre>Cnmtrade adalah perusahaan trading yang telah berdiri dari tahun 2014, perusahaan yang bertujuan mempermudah semua kalangan untuk melakukan trading khususnya trading Indonesia-China, membuktikan trading bukan hanya tidak harus dalam quantity yang besar dan membutuhkan modal yang banyak.
+
+Cnm trade menyediakan beberapa macam jasa
+
+<b>1. Jasa Bayar (Payment Service)</b>
+Jasa yang membantu para importir untuk membayar pelunasan kepada vendor - vendor yang ada di China dalam mata uang CNY / RMB
+
+    Jasa bayar bisa dilakukan dengan berbagai metode
+    - transfer bank to bank
+    - transfer wechat
+    - transfer alipay
+    - Alipay ask someone to pay
+
+Dengan jasa bayar importir cukup melakukan pelunasan dalam bentuk rupiah yang di transfer ke rekening Cnmtrade dan Cnmtrade akan melakukan pelunasan kepada vendor vendor china. 
+
+<b>2. Jasa One Stop Trading</b>
+Jasa yang membantu para importir mulai dari factory hunting (bold), trade negotiation (bold)
+Payment service (jasa bayar), quality checking (bold), freight (pengiriman) (bold) baik LCL (less than container load) maupun FCL (full container load)
+</pre>
     </div>
 </div><div class="section section-3" data-menu="2">
     <div class="section-inner">
@@ -29,22 +46,32 @@
         <div class="section-item">4. Admin akan melakukan pembayaran rupiah sebelum pukul 15.00 WIB</div>
     </div>
 </div><div class="section section-5" data-menu="4">
-    <div class="section-inner testimony-container">
-        <img class="testimony" src="<?php echo base_url("assets/images/testimony_1.jpg"); ?>" />
-        <img class="testimony" src="<?php echo base_url("assets/images/testimony_2.jpg"); ?>" />
-        <img class="testimony" src="<?php echo base_url("assets/images/testimony_3.jpg"); ?>" />
-        <img class="testimony" src="<?php echo base_url("assets/images/testimony_4.jpg"); ?>" />
+    <div class="section-inner">
+        <div class="testimony-container">
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_1.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_2.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_3.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_4.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_5.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_6.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_7.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_8.jpg"); ?>" />
+        </div>
     </div>
 </div><div class="section section-6" data-menu="5">
     <div class="section-inner faq-inner">
-        <pre class="faq"><b>1. Lorem Ipsum is simply dummy text of the printing and typesetting industry</b>
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        <pre class="faq"><b>Jasa bayar cnm trade aman ga si?</b>
+Dijamin aman kami sudah berjalan dari 2014 dan sudah banyak testimoni yang bisa dicek loh di bagian TESTIMONY (LINK) 
 
-<b>2. Lorem Ipsum is simply dummy text of the printing and typesetting industry</b>
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+<b>Jasa bayar cnmtrade ada biaya admin ga ya?</b>
+Untuk transaksi di bawah 100rb RMB biaya adminnya cuma 50 ribu rupiah, sementara perusahaan trading lain 100rb loh
 
-<b>3. Lorem Ipsum is simply dummy text of the printing and typesetting industry</b>
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</pre>
+<b>Bagaimana tata cara transaksi di cnmtrade?</b>
+Untuk jasa bayar traders tinggal klik di kanan atas di menu BUY
+Untuk traders yang mau menukarkan rmb nya ke rupiah langsung klik aja di menu SELL
+
+<b>Brp si rate hr ini?</b>
+Langsung aja dm admin klik di logo whatsapp di bawah</pre>
     <div class="bottom-shadow"></div></div>
 </div><div class="section section-7" data-menu="6">
     <div class="section-inner section-inner-contact">

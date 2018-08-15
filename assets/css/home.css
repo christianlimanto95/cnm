@@ -1,4 +1,4 @@
-::-webkit-scrollbar {
+.container::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
 }
 
@@ -40,6 +40,12 @@
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: white;
+}
+
+.what-we-do-inner {
+    line-height: 25px;
+    max-height: 400px;
+    overflow-y: auto !important;
 }
 
 .section-title {
@@ -117,12 +123,13 @@
         height: 90vw;
         overflow-y: auto;
         padding-bottom: 20px;
+        margin-left: -5vw;
     }
 
     .testimony {
         display: block;
         width: 90vw;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .faq {
@@ -190,6 +197,7 @@
         height: 80vw;
         overflow-y: auto;
         padding-bottom: 20px;
+        margin: 0 auto;
     }
 
     .testimony {
@@ -228,5 +236,9 @@
     .testimony {
         max-width: 200px;
         max-height: 300px;
+    }
+
+    .testimony-container {
+        display: inline-block;
     }
 }

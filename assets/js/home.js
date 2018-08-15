@@ -1,10 +1,49 @@
 var container = document.getElementsByClassName("container")[0];
 var section2Left = vw / 2, section3Left = vw + vw / 2, section4Left = vw * 2 + vw / 2, section5Left = vw * 3 + vw / 2, section6Left = vw * 4 + vw / 2, section7Left = vw * 5 + vw / 2;
 var scrollPosition = 0, isScrolling = false;
+var faqInner, faqHasScrollbar, whatInner, whatHasScrollbar;
 
 $(function() {
     var logo = $(".logo");
     if (!isMobile) {
+        faqInner = $(".faq-inner")[0];
+        faqHasScrollbar = faqInner.scrollHeight > faqInner.clientHeight;
+        if (faqHasScrollbar) {
+            var faq = $(".faq");
+            faq.on("mousewheel DOMMouseScroll", function(e) {
+                e.stopPropagation();
+            });
+
+            var faqHeight = faq.height();
+            var faqScrollHeight = faq.prop("scrollHeight");
+            faq.on("scroll", function() {
+                if ($(this).scrollTop() + faqHeight >= faqScrollHeight) {
+                    faq.off("mousewheel DOMMouseScroll");
+                } else if ($(this).scrollTop() == 0) {
+                    faq.off("mousewheel DOMMouseScroll");
+                }
+            });
+        }
+
+        whatInner = $(".what-we-do-inner")[0];
+        whatHasScrollbar = whatInner.scrollHeight > whatInner.clientHeight;
+        if (whatHasScrollbar) {
+            var whatWeDo = $(".what-we-do-inner");
+            whatWeDo.on("mousewheel DOMMouseScroll", function(e) {
+                e.stopPropagation();
+            });
+
+            var whatHeight = whatWeDo.height();
+            var whatScrollHeight = whatWeDo.prop("scrollHeight");
+            whatWeDo.on("scroll", function() {
+                if ($(this).scrollTop() + whatHeight >= whatScrollHeight) {
+                    whatWeDo.off("mousewheel DOMMouseScroll");
+                } else if ($(this).scrollTop() == 0) {
+                    whatWeDo.off("mousewheel DOMMouseScroll");
+                }
+            });
+        }
+
         $(window).on('mousewheel DOMMouseScroll', mouseWheelListener);
     }
 
@@ -97,7 +136,7 @@ function mouseWheelListener(event) {
             }
         }
         else {
-            if (scrollPosition < 5) {
+            if (scrollPosition < 6) {
                 scrollPosition++;
             }
         }
@@ -114,6 +153,36 @@ function setScrollTo(number) {
         container: container,
         complete: function() {
             isScrolling = false;
+
+            if (faqHasScrollbar) {
+                var faq = $(".faq");
+                faq.on("mousewheel DOMMouseScroll", function(e) {
+                    e.stopPropagation();
+                });
+
+                /*var faqHeight = faq.height();
+                var faqScrollHeight = faq.prop("scrollHeight");
+                if (faq.scrollTop() + faqHeight >= faqScrollHeight) {
+                    faq.off("mousewheel DOMMouseScroll");
+                } else if (faq.scrollTop() == 0) {
+                    faq.off("mousewheel DOMMouseScroll");
+                }*/
+            }
+
+            if (whatHasScrollbar) {
+                var whatWeDo = $(".what-we-do-inner");
+                whatWeDo.on("mousewheel DOMMouseScroll", function(e) {
+                    e.stopPropagation();
+                });
+
+                /*var whatHeight = whatWeDo.height();
+                var whatScrollHeight = whatWeDo.prop("scrollHeight");
+                if (whatWeDo.scrollTop() + whatHeight >= whatScrollHeight) {
+                    whatWeDo.off("mousewheel DOMMouseScroll");
+                } else if (whatWeDo.scrollTop() == 0) {
+                    whatWeDo.off("mousewheel DOMMouseScroll");
+                }*/
+            }
         }
     });
 }
