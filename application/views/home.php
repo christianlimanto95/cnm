@@ -9,18 +9,18 @@
     </div>
 </div><div class="section section-2" data-menu="1">
     <div class="section-inner what-we-do-inner">
-        <pre>Cnmtrade adalah perusahaan trading yang telah berdiri dari tahun 2014, perusahaan yang bertujuan mempermudah semua kalangan untuk melakukan trading khususnya trading Indonesia-China, membuktikan trading bukan hanya tidak harus dalam quantity yang besar dan membutuhkan modal yang banyak.
+        <pre>Cnmtrade adalah perusahaan trading yang telah berdiri dari tahun 2014, perusahaan yang bertujuan mempermudah semua kalangan untuk melakukan trading khususnya trading Indonesia-China, membuktikan trading tidak harus dalam quantity yang besar dan membutuhkan modal yang banyak.
 
 Cnm trade menyediakan beberapa macam jasa
 
 <b>1. Jasa Bayar (Payment Service)</b>
 Jasa yang membantu para importir untuk membayar pelunasan kepada vendor - vendor yang ada di China dalam mata uang CNY / RMB
 
-    Jasa bayar bisa dilakukan dengan berbagai metode
-    - transfer bank to bank
-    - transfer wechat
-    - transfer alipay
-    - Alipay ask someone to pay
+Jasa bayar bisa dilakukan dengan berbagai metode
+    <b>- transfer bank to bank</b>
+    <b>- transfer wechat</b>
+    <b>- transfer alipay</b>
+    <b>- Alipay ask someone to pay</b>
 
 Dengan jasa bayar importir cukup melakukan pelunasan dalam bentuk rupiah yang di transfer ke rekening Cnmtrade dan Cnmtrade akan melakukan pelunasan kepada vendor vendor china. 
 

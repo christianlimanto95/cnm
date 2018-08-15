@@ -108,7 +108,6 @@ $(function() {
         var menu = $(".header-menu[data-menu-name='" + menuName + "']").attr("data-menu");
         scrollPosition = parseInt(menu);
         setScrollTo(scrollPosition);
-        closeMenuMobile();
     });
 
     $(".header-menu").on("click", function(e) {
