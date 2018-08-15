@@ -25,8 +25,8 @@ Jasa yang membantu para importir untuk membayar pelunasan kepada vendor - vendor
 Dengan jasa bayar importir cukup melakukan pelunasan dalam bentuk rupiah yang di transfer ke rekening Cnmtrade dan Cnmtrade akan melakukan pelunasan kepada vendor vendor china. 
 
 <b>2. Jasa One Stop Trading</b>
-Jasa yang membantu para importir mulai dari factory hunting (bold), trade negotiation (bold)
-Payment service (jasa bayar), quality checking (bold), freight (pengiriman) (bold) baik LCL (less than container load) maupun FCL (full container load)
+Jasa yang membantu para importir mulai dari <b>factory hunting</b>, <b>trade negotiation</b>
+<b>Payment service (jasa bayar)</b>, <b>quality checking</b>, <b>freight (pengiriman)</b> baik LCL (less than container load) maupun FCL (full container load)
 </pre>
     </div>
 </div><div class="section section-3" data-menu="2">
@@ -56,19 +56,39 @@ Payment service (jasa bayar), quality checking (bold), freight (pengiriman) (bol
             <img class="testimony" src="<?php echo base_url("assets/images/testimony_6.jpg"); ?>" />
             <img class="testimony" src="<?php echo base_url("assets/images/testimony_7.jpg"); ?>" />
             <img class="testimony" src="<?php echo base_url("assets/images/testimony_8.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_9.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_10.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_11.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_12.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_13.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_14.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_15.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_16.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_17.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_18.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_19.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_20.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_21.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_22.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_23.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_24.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_25.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_26.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_27.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/testimony_28.jpg"); ?>" />
         </div>
     </div>
 </div><div class="section section-6" data-menu="5">
     <div class="section-inner faq-inner">
         <pre class="faq"><b>Jasa bayar cnm trade aman ga si?</b>
-Dijamin aman kami sudah berjalan dari 2014 dan sudah banyak testimoni yang bisa dicek loh di bagian TESTIMONY (LINK) 
+Dijamin aman kami sudah berjalan dari 2014 dan sudah banyak testimoni yang bisa dicek loh di bagian <a class="link" data-menu-name="testimony">TESTIMONY</a>
 
 <b>Jasa bayar cnmtrade ada biaya admin ga ya?</b>
 Untuk transaksi di bawah 100rb RMB biaya adminnya cuma 50 ribu rupiah, sementara perusahaan trading lain 100rb loh
 
 <b>Bagaimana tata cara transaksi di cnmtrade?</b>
-Untuk jasa bayar traders tinggal klik di kanan atas di menu BUY
-Untuk traders yang mau menukarkan rmb nya ke rupiah langsung klik aja di menu SELL
+Untuk jasa bayar traders tinggal klik di kanan atas di menu <a class="link" data-menu-name="buy">BUY</a>
+Untuk traders yang mau menukarkan rmb nya ke rupiah langsung klik aja di menu <a class="link" data-menu-name="sell">SELL</a>
 
 <b>Brp si rate hr ini?</b>
 Langsung aja dm admin klik di logo whatsapp di bawah</pre>

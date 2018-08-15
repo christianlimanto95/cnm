@@ -69,6 +69,11 @@
     line-height: 25px;
 }
 
+.link {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .contact-info {
     line-height: 25px;
     font-size: 14pt;
@@ -240,5 +245,8 @@
 
     .testimony-container {
         display: inline-block;
+        padding-bottom: 30px;
+        max-width: 80vw;
+        overflow-y: auto;
     }
 }

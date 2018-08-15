@@ -13,7 +13,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/common/default.css?v=5"); ?>" />
-	<link rel="stylesheet" href="<?php echo base_url("assets/css/" . $page_name . ".css?v=7"); ?>" />
+	<link rel="stylesheet" href="<?php echo base_url("assets/css/" . $page_name . ".css?v=8"); ?>" />
     <?php echo $additional_css; ?>
 </head>
 <body>
@@ -25,12 +25,12 @@
 </div>
 <div class="header-menu-container">
     <div class="header-menu-inner-container">
-        <a href="<?php echo base_url("what-we-do"); ?>" class="header-menu" data-menu="1"><span class="white-line"></span>WHAT WE DO</a><br>
-        <a href="<?php echo base_url("buy"); ?>" class="header-menu" data-menu="2"><span class="white-line"></span>BUY</a><br>
-        <a href="<?php echo base_url("sell"); ?>" class="header-menu" data-menu="3"><span class="white-line"></span>SELL</a><br>
-        <a href="<?php echo base_url("testimony"); ?>" class="header-menu" data-menu="4"><span class="white-line"></span>TESTIMONY</a><br>
-        <a href="<?php echo base_url("faq"); ?>" class="header-menu" data-menu="5"><span class="white-line"></span>FAQ</a><br>
-        <a href="<?php echo base_url("contact"); ?>" class="header-menu" data-menu="6"><span class="white-line"></span>CONTACT US</a><br>
+        <a href="<?php echo base_url("what-we-do"); ?>" class="header-menu" data-menu="1" data-menu-name="what-we-do"><span class="white-line"></span>WHAT WE DO</a><br>
+        <a href="<?php echo base_url("buy"); ?>" class="header-menu" data-menu="2" data-menu-name="buy"><span class="white-line"></span>BUY</a><br>
+        <a href="<?php echo base_url("sell"); ?>" class="header-menu" data-menu="3" data-menu-name="sell"><span class="white-line"></span>SELL</a><br>
+        <a href="<?php echo base_url("testimony"); ?>" class="header-menu" data-menu="4" data-menu-name="testimony"><span class="white-line"></span>TESTIMONY</a><br>
+        <a href="<?php echo base_url("faq"); ?>" class="header-menu" data-menu="5" data-menu-name="faq"><span class="white-line"></span>FAQ</a><br>
+        <a href="<?php echo base_url("contact"); ?>" class="header-menu" data-menu="6" data-menu-name="contact-us"><span class="white-line"></span>CONTACT US</a><br>
     </div>
 </div>
 <div class="subtitle show" data-menu="0"></div>
