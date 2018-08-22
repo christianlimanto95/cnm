@@ -6,4 +6,46 @@ class Home_model extends CI_Model
     {
         parent::__construct();
     }
+
+    public function get_what() {
+        $query = $this->db->query("
+            SELECT what_text
+            FROM what
+        ");
+        return $query->result();
+    }
+
+    public function get_testimony() {
+        $query = $this->db->query("
+            SELECT testimony_id, testimony_image_extension, testimony_index, modified_date
+            FROM testimony
+            WHERE status = 1
+        ");
+        return $query->result();
+    }
+
+    public function get_trading() {
+        $query = $this->db->query("
+            SELECT trading_id, trading_image_extension, trading_index, modified_date
+            FROM trading
+            WHERE status = 1
+        ");
+        return $query->result();
+    }
+
+    public function get_faq() {
+        $query = $this->db->query("
+            SELECT faq_text
+            FROM faq
+        ");
+        return $query->result();
+    }
+    
+    public function get_contact() {
+        $query = $this->db->query("
+            SELECT contact_text
+            FROM contact
+        ");
+        return $query->result();
+    }
 }
