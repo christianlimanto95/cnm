@@ -29,8 +29,9 @@
         <a href="<?php echo base_url("buy"); ?>" class="header-menu" data-menu="2" data-menu-name="buy"><span class="white-line"></span>BUY</a><br>
         <a href="<?php echo base_url("sell"); ?>" class="header-menu" data-menu="3" data-menu-name="sell"><span class="white-line"></span>SELL</a><br>
         <a href="<?php echo base_url("testimony"); ?>" class="header-menu" data-menu="4" data-menu-name="testimony"><span class="white-line"></span>TESTIMONY</a><br>
-        <a href="<?php echo base_url("faq"); ?>" class="header-menu" data-menu="5" data-menu-name="faq"><span class="white-line"></span>FAQ</a><br>
-        <a href="<?php echo base_url("contact"); ?>" class="header-menu" data-menu="6" data-menu-name="contact-us"><span class="white-line"></span>CONTACT US</a><br>
+        <a href="<?php echo base_url("testimony-trading"); ?>" class="header-menu" data-menu="5" data-menu-name="testimony"><span class="white-line"></span>TESTIMONY (TRADING)</a><br>
+        <a href="<?php echo base_url("faq"); ?>" class="header-menu" data-menu="6" data-menu-name="faq"><span class="white-line"></span>FAQ</a><br>
+        <a href="<?php echo base_url("contact"); ?>" class="header-menu" data-menu="7" data-menu-name="contact-us"><span class="white-line"></span>CONTACT US</a><br>
     </div>
 </div>
 <div class="subtitle show" data-menu="0"></div>
@@ -38,8 +39,9 @@
 <div class="subtitle" data-menu="2">BUY</div>
 <div class="subtitle" data-menu="3">SELL</div>
 <div class="subtitle" data-menu="4">TESTIMONY</div>
-<div class="subtitle" data-menu="5">FAQ</div>
-<div class="subtitle" data-menu="6">CONTACT</div>
+<div class="subtitle" data-menu="5">TESTIMONY (TRADING)</div>
+<div class="subtitle" data-menu="6">FAQ</div>
+<div class="subtitle" data-menu="7">CONTACT</div>
 <script>
 var vw = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 var vh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;

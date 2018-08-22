@@ -1,5 +1,5 @@
 var container = document.getElementsByClassName("container")[0];
-var section2Left = vw / 2, section3Left = vw + vw / 2, section4Left = vw * 2 + vw / 2, section5Left = vw * 3 + vw / 2, section6Left = vw * 4 + vw / 2, section7Left = vw * 5 + vw / 2;
+var section2Left = vw / 2, section3Left = vw + vw / 2, section4Left = vw * 2 + vw / 2, section5Left = vw * 3 + vw / 2, section6Left = vw * 4 + vw / 2, section7Left = vw * 5 + vw / 2, section8Left = vw * 6 + vw / 2;
 var scrollPosition = 0, isScrolling = false;
 var faqInner, faqHasScrollbar, whatInner, whatHasScrollbar;
 
@@ -45,6 +45,7 @@ $(function() {
         }
 
         $(window).on('mousewheel DOMMouseScroll', mouseWheelListener);
+        $(window).on("keydown", keydownListener);
     }
 
     scrollContainer.one("click", function() {
@@ -61,7 +62,7 @@ $(function() {
     });
 
     container.addEventListener("scroll", checkShowLogo);
-    var subtitle1 = $(".subtitle[data-menu='0']"), subtitle2 = $(".subtitle[data-menu='1']"), subtitle3 = $(".subtitle[data-menu='2']"), subtitle4 = $(".subtitle[data-menu='3']"), subtitle5 = $(".subtitle[data-menu='4']"), subtitle6 = $(".subtitle[data-menu='5']"), subtitle7 = $(".subtitle[data-menu='6']");
+    var subtitle1 = $(".subtitle[data-menu='0']"), subtitle2 = $(".subtitle[data-menu='1']"), subtitle3 = $(".subtitle[data-menu='2']"), subtitle4 = $(".subtitle[data-menu='3']"), subtitle5 = $(".subtitle[data-menu='4']"), subtitle6 = $(".subtitle[data-menu='5']"), subtitle7 = $(".subtitle[data-menu='6']"), subtitle8 = $(".subtitle[data-menu='7']");
     
     container.addEventListener("scroll", function() {
         if (container.scrollLeft >= 0 && container.scrollLeft < section2Left) {
@@ -94,10 +95,15 @@ $(function() {
                 $(".subtitle.show").removeClass("show");
                 subtitle6.addClass("show");
             }
-        } else {
+        } else if (container.scrollLeft >= section7Left && container.scrollLeft < section8Left) {
             if (!subtitle7.hasClass("show")) {
                 $(".subtitle.show").removeClass("show");
                 subtitle7.addClass("show");
+            }
+        } else {
+            if (!subtitle8.hasClass("show")) {
+                $(".subtitle.show").removeClass("show");
+                subtitle8.addClass("show");
             }
         }
     });
@@ -131,7 +137,7 @@ $(function() {
             $(window).off('mousewheel DOMMouseScroll', mouseWheelListener);
         }
 
-        section2Left = vw / 2, section3Left = vw + vw / 2, section4Left = vw * 2 + vw / 2, section5Left = vw * 3 + vw / 2, section6Left = vw * 4 + vw / 2, section7Left = vw * 5 + vw / 2;
+        section2Left = vw / 2, section3Left = vw + vw / 2, section4Left = vw * 2 + vw / 2, section5Left = vw * 3 + vw / 2, section6Left = vw * 4 + vw / 2, section7Left = vw * 5 + vw / 2, section8Left = vw * 6 + vw / 2;
     });
 });
 
@@ -144,11 +150,28 @@ function mouseWheelListener(event) {
             }
         }
         else {
-            if (scrollPosition < 6) {
+            if (scrollPosition < 7) {
                 scrollPosition++;
             }
         }
 
+        setScrollTo(scrollPosition);
+    }
+}
+
+function keydownListener(e) {
+    if (!isScrolling) {
+        isScrolling = true;
+        if (e.which == 37) {
+            if (scrollPosition > 0) {
+                scrollPosition--;
+            }
+        } else if (e.which == 39) {
+            if (scrollPosition < 7) {
+                scrollPosition++;
+            }
+        }
+        
         setScrollTo(scrollPosition);
     }
 }

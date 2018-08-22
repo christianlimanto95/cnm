@@ -79,6 +79,13 @@ Jasa yang membantu para importir mulai dari <b>factory hunting</b>, <b>trade neg
         </div>
     </div>
 </div><div class="section section-6" data-menu="5">
+    <div class="section-inner">
+        <div class="testimony-container">
+            <img class="testimony" src="<?php echo base_url("assets/images/trading_1.jpg"); ?>" />
+            <img class="testimony" src="<?php echo base_url("assets/images/trading_2.jpg"); ?>" />
+        </div>
+    </div>
+</div><div class="section section-7" data-menu="6">
     <div class="section-inner faq-inner">
         <pre class="faq"><b>Jasa bayar cnm trade aman ga si?</b>
 Dijamin aman kami sudah berjalan dari 2014 dan sudah banyak testimoni yang bisa dicek loh di bagian <a class="link" data-menu-name="testimony">TESTIMONY</a>
@@ -93,7 +100,7 @@ Untuk traders yang mau menukarkan rmb nya ke rupiah langsung klik aja di menu <a
 <b>Brp si rate hr ini?</b>
 Langsung aja dm admin klik di logo whatsapp di bawah</pre>
     <div class="bottom-shadow"></div></div>
-</div><div class="section section-7" data-menu="6">
+</div><div class="section section-8" data-menu="7">
     <div class="section-inner section-inner-contact">
         <pre class="contact-info">Michael Pranata
 
