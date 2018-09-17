@@ -239,7 +239,8 @@ input.form-input, input.form-input-inline, textarea.form-input, textarea.form-in
 
 textarea.form-input, textarea.form-input-inline {
     resize: vertical;
-    height: 85px;
+    width: 600px;
+    height: 400px;
 }
 
 .error, .error-inline {
@@ -330,7 +331,7 @@ textarea.form-input, textarea.form-input-inline {
     left: 0;
     width: 250px;
     height: 100vh;
-    background-color: black;
+    background-color: #0165b0;
     overflow-y: auto;
     padding-bottom: 30px;
     z-index: 1000;

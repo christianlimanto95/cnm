@@ -29,6 +29,7 @@
     </div>
 </div>
 <div class="notification"></div>
+<div class="container">
 <?php 
     if ($this->session->userdata("success_message")) {
         echo "<div class='success-message'>" . $this->session->userdata("success_message") . "</div>";
