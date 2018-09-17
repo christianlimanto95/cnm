@@ -36,6 +36,50 @@ class Admin_model extends CI_Model
         $this->db->update("sell");
         return $this->db->affected_rows();
     }
+    
+    public function get_testimony() {
+        $this->db->where("status", 1);
+        $this->db->order_by("created_date", "desc");
+        return $this->db->get("testimony")->result();
+    }
+
+    public function add_testimony($data) {
+        $data = array(
+            "testimony_image_extension" => $data["testimony_image_extension"],
+            "testimony_index" => "1"
+        );
+        $this->db->insert("testimony", $data);
+        return $this->db->insert_id();
+    }
+
+    public function delete_testimony($id) {
+        $this->db->where("testimony_id", $id);
+        $this->db->set("status", 0);
+        $this->db->update("testimony");
+        return $this->db->affected_rows();
+    }
+
+    public function get_trading() {
+        $this->db->where("status", 1);
+        $this->db->order_by("created_date", "desc");
+        return $this->db->get("trading")->result();
+    }
+
+    public function add_trading($data) {
+        $data = array(
+            "trading_image_extension" => $data["trading_image_extension"],
+            "trading_index" => "1"
+        );
+        $this->db->insert("trading", $data);
+        return $this->db->insert_id();
+    }
+
+    public function delete_trading($id) {
+        $this->db->where("trading_id", $id);
+        $this->db->set("status", 0);
+        $this->db->update("trading");
+        return $this->db->affected_rows();
+    }
 
     public function get_faq() {
         return $this->db->get("faq")->result();

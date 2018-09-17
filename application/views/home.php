@@ -27,7 +27,7 @@
             <?php
             $iLength = sizeof($testimony);
             for ($i = 0; $i < $iLength; $i++) {
-                echo '<img class="testimony" src="' . base_url("assets/images/testimony_" . $testimony[$i]->testimony_id . ".jpg?d=" . strtotime($testimony[$i]->modified_date)) . '" />';
+                echo '<img class="testimony" src="' . base_url("assets/images/testimony_" . $testimony[$i]->testimony_id . "." . $testimony[$i]->testimony_image_extension . "?d=" . strtotime($testimony[$i]->modified_date)) . '" />';
             }
             ?>
         </div>
@@ -38,7 +38,7 @@
         <?php
         $iLength = sizeof($trading);
         for ($i = 0; $i < $iLength; $i++) {
-            echo '<img class="testimony" src="' . base_url("assets/images/trading_" . $trading[$i]->trading_id . ".jpg?d=" . strtotime($trading[$i]->modified_date)) . '" />';
+            echo '<img class="testimony" src="' . base_url("assets/images/trading_" . $trading[$i]->trading_id . "." . $trading[$i]->trading_image_extension . "?d=" . strtotime($trading[$i]->modified_date)) . '" />';
         }
         ?>
         </div>

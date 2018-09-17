@@ -1,0 +1,26 @@
+.btn-save {
+    margin-top: 20px;
+}
+
+.testimony-container {
+    margin-top: 100px;
+    clear: both;
+}
+
+.testimony-image-container {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    max-width: 400px;
+}
+
+.testimony-image {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.btn-delete-testimony {
+    width: auto;
+}

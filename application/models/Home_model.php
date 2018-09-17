@@ -36,6 +36,7 @@ class Home_model extends CI_Model
             SELECT testimony_id, testimony_image_extension, testimony_index, modified_date
             FROM testimony
             WHERE status = 1
+            ORDER BY created_date DESC
         ");
         return $query->result();
     }
@@ -45,6 +46,7 @@ class Home_model extends CI_Model
             SELECT trading_id, trading_image_extension, trading_index, modified_date
             FROM trading
             WHERE status = 1
+            ORDER BY created_date DESC
         ");
         return $query->result();
     }

@@ -107,6 +107,120 @@ class Admin extends General_controller {
         }
     }
 
+    public function testimony() {
+        $testimony = $this->Admin_model->get_testimony();
+        $data = array(
+			"title" => "Admin &mdash; Testimony",
+			"menu_active" => parent::set_admin_menu_active("testimony"),
+            "menu_title" => "Testimony",
+            "testimony" => $testimony
+		);
+		
+		parent::adminview("admin_testimony", $data);
+    }
+
+    public function add_testimony() {
+        $testimony_image = $this->input->post("testimony_image");
+        $testimony_image_extension = "";
+        if ($testimony_image != "") {
+            if (preg_match('/^data:image\/(\w+);base64,/', $testimony_image, $type)) {
+                $type = strtolower($type[1]); // jpg, png, gif
+                $testimony_image_extension = $type;
+            }
+
+            $data = array(
+                "testimony_image_extension" => $testimony_image_extension
+            );
+            $testimony_id = $this->Admin_model->add_testimony($data);
+            if ($testimony_id) {
+                if (preg_match('/^data:image\/(\w+);base64,/', $testimony_image, $type)) {
+                    $data = substr($testimony_image, strpos($testimony_image, ',') + 1);
+                    $type = strtolower($type[1]); // jpg, png, gif
+                
+                    $data = base64_decode($data);
+                    file_put_contents("assets/images/testimony_" . $testimony_id . "." . $type, $data);
+
+                    echo json_encode(array(
+                        "status" => "success"
+                    ));
+                }
+            } else {
+                echo json_encode(array(
+                    "status" => "error"
+                ));
+            }
+        } else {
+            echo json_encode(array(
+                "status" => "error"
+            ));
+        }
+    }
+
+    public function delete_testimony() {
+        $testimony_id = $this->input->post("testimony_id");
+        $this->Admin_model->delete_testimony($testimony_id);
+        echo json_encode(array(
+            "status" => "success"
+        ));
+    }
+
+    public function trading() {
+        $trading = $this->Admin_model->get_trading();
+        $data = array(
+			"title" => "Admin &mdash; Trading",
+			"menu_active" => parent::set_admin_menu_active("trading"),
+            "menu_title" => "Trading",
+            "trading" => $trading
+		);
+		
+		parent::adminview("admin_trading", $data);
+    }
+
+    public function add_trading() {
+        $trading_image = $this->input->post("trading_image");
+        $trading_image_extension = "";
+        if ($trading_image != "") {
+            if (preg_match('/^data:image\/(\w+);base64,/', $trading_image, $type)) {
+                $type = strtolower($type[1]); // jpg, png, gif
+                $trading_image_extension = $type;
+            }
+
+            $data = array(
+                "trading_image_extension" => $trading_image_extension
+            );
+            $trading_id = $this->Admin_model->add_trading($data);
+            if ($trading_id) {
+                if (preg_match('/^data:image\/(\w+);base64,/', $trading_image, $type)) {
+                    $data = substr($trading_image, strpos($trading_image, ',') + 1);
+                    $type = strtolower($type[1]); // jpg, png, gif
+                
+                    $data = base64_decode($data);
+                    file_put_contents("assets/images/trading_" . $trading_id . "." . $type, $data);
+
+                    echo json_encode(array(
+                        "status" => "success"
+                    ));
+                }
+            } else {
+                echo json_encode(array(
+                    "status" => "error"
+                ));
+            }
+        } else {
+            echo json_encode(array(
+                "status" => "error"
+            ));
+        }
+    }
+
+    public function delete_trading() {
+        $trading_id = $this->input->post("trading_id");
+        $this->Admin_model->delete_trading($trading_id);
+        echo json_encode(array(
+            "status" => "success"
+        ));
+    }
+
     public function faq()
 	{
         $faq = $this->Admin_model->get_faq()[0]->faq_text;
