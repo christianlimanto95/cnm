@@ -17,6 +17,26 @@ class Admin_model extends CI_Model
         return $this->db->affected_rows();
     }
 
+    public function get_buy() {
+        return $this->db->get("buy")->result();
+    }
+
+    public function update_buy($data) {
+        $this->db->set("buy_text", $data["buy_text"]);
+        $this->db->update("buy");
+        return $this->db->affected_rows();
+    }
+
+    public function get_sell() {
+        return $this->db->get("sell")->result();
+    }
+
+    public function update_sell($data) {
+        $this->db->set("sell_text", $data["sell_text"]);
+        $this->db->update("sell");
+        return $this->db->affected_rows();
+    }
+
     public function delete_from_table($data) {
         $this->db->where($data["table_name"] . "_id", $data["id"]);
         $this->db->set("status", 0);

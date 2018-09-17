@@ -15,6 +15,22 @@ class Home_model extends CI_Model
         return $query->result();
     }
 
+    public function get_buy() {
+        $query = $this->db->query("
+            SELECT buy_text
+            FROM buy
+        ");
+        return $query->result();
+    }
+
+    public function get_sell() {
+        $query = $this->db->query("
+            SELECT sell_text
+            FROM sell
+        ");
+        return $query->result();
+    }
+
     public function get_testimony() {
         $query = $this->db->query("
             SELECT testimony_id, testimony_image_extension, testimony_index, modified_date

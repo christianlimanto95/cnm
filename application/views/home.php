@@ -14,18 +14,12 @@
 </div><div class="section section-3" data-menu="2">
     <div class="section-inner">
         <div class="section-title">Cara Transaksi Buy (Beli)</div>
-        <div class="section-item">1. Kontak admin dan deal dengan harga terbaik</div>
-        <div class="section-item">2. Transfer RUPIAH ke rekening admin</div>
-        <div class="section-item">3. Kirimkan bukti transfer ke admin</div>
-        <div class="section-item">4. RMB akan diproses sebelum pukul 16.00 WIB</div>
+        <div class="buy-text"><pre><?php echo $buy->buy_text; ?></pre></div>
     </div>
 </div><div class="section section-4" data-menu="3">
     <div class="section-inner">
         <div class="section-title">Cara Transaksi Sell (Jual)</div>
-        <div class="section-item">1. Kontak admin dan deal dengan harga terbaik</div>
-        <div class="section-item">2. Transfer RMB ke rekening admin</div>
-        <div class="section-item">3. Kirimkan bukti transfer ke admin</div>
-        <div class="section-item">4. Admin akan melakukan pembayaran rupiah sebelum pukul 15.00 WIB</div>
+        <div class="buy-text"><pre><?php echo $sell->sell_text; ?></pre></div>
     </div>
 </div><div class="section section-5" data-menu="4">
     <div class="section-inner">

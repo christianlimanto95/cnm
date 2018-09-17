@@ -13,6 +13,8 @@ class Home extends General_controller {
 	public function index()
 	{
         $what = $this->Home_model->get_what()[0];
+        $buy = $this->Home_model->get_buy()[0];
+        $sell = $this->Home_model->get_sell()[0];
         $testimony = $this->Home_model->get_testimony();
         $trading = $this->Home_model->get_trading();
         $faq = $this->Home_model->get_faq()[0];
@@ -25,7 +27,9 @@ class Home extends General_controller {
             "trading" => $trading,
             "faq" => $faq,
             "contact" => $contact,
-            "what" => $what
+            "what" => $what,
+            "buy" => $buy,
+            "sell" => $sell
 		);
 		
 		parent::view("home", $data);

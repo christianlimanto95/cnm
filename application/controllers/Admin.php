@@ -24,14 +24,6 @@ class Admin extends General_controller {
 		parent::adminview("admin", $data);
     }
 
-    public function get_what() {
-        $what = $this->Admin_model->get_what()[0]->what_text;
-        echo json_encode(array(
-            "status" => "success",
-            "data" => $what
-        ));
-    }
-
     public function update_what() {
         $what = $this->input->post("what");
         $data = array(
@@ -43,6 +35,70 @@ class Admin extends General_controller {
             echo json_encode(array(
                 "status" => "success",
                 "data" => $what
+            ));
+        } else {
+            echo json_encode(array(
+                "status" => "error"
+            ));
+        }
+    }
+
+    public function buy()
+	{
+        $buy = $this->Admin_model->get_buy()[0]->buy_text;
+        $data = array(
+			"title" => "Admin &mdash; Home",
+			"menu_active" => parent::set_admin_menu_active("buy"),
+            "menu_title" => "Buy",
+            "buy" => $buy
+		);
+		
+		parent::adminview("admin_buy", $data);
+    }
+
+    public function update_buy() {
+        $buy = $this->input->post("buy");
+        $data = array(
+            "buy_text" => $buy
+        );
+        $affected_rows = $this->Admin_model->update_buy($data);
+        if ($affected_rows > 0) {
+            $buy = $this->Admin_model->get_buy()[0]->buy_text;
+            echo json_encode(array(
+                "status" => "success",
+                "data" => $buy
+            ));
+        } else {
+            echo json_encode(array(
+                "status" => "error"
+            ));
+        }
+    }
+
+    public function sell()
+	{
+        $sell = $this->Admin_model->get_sell()[0]->sell_text;
+        $data = array(
+			"title" => "Admin &mdash; Home",
+			"menu_active" => parent::set_admin_menu_active("sell"),
+            "menu_title" => "Sell",
+            "sell" => $sell
+		);
+		
+		parent::adminview("admin_sell", $data);
+    }
+
+    public function update_sell() {
+        $sell = $this->input->post("sell");
+        $data = array(
+            "sell_text" => $sell
+        );
+        $affected_rows = $this->Admin_model->update_sell($data);
+        if ($affected_rows > 0) {
+            $sell = $this->Admin_model->get_sell()[0]->sell_text;
+            echo json_encode(array(
+                "status" => "success",
+                "data" => $sell
             ));
         } else {
             echo json_encode(array(
