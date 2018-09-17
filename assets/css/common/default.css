@@ -168,7 +168,7 @@ pre {
     overflow-y: hidden;
 }
 
-.whatsapp-container {
+.whatsapp-container, .wechat-container {
     position: fixed;
     display: inline-block;
     padding: 10px;
@@ -181,11 +181,19 @@ pre {
     z-index: 2000;
 }
 
+.wechat-container {
+    background-color: transparent;
+}
+
 .whatsapp-call-text {
     color: black;
 }
 
-.whatsapp-icon {
+.wechat-text {
+    font-size: 12pt;
+}
+
+.whatsapp-icon, .wechat-icon {
     display: inline-block;
     vertical-align: middle;
     background-size: 100%;
@@ -292,6 +300,17 @@ pre {
     .whatsapp-icon {
         width: 45px;
         height: 45px;
+    }
+    
+    .wechat-container {
+        bottom: 90px;
+        right: 10px;
+    }
+
+    .wechat-icon {
+        width: 50px;
+        height: 50px;
+        margin-left: 5px;
     }
 
     .footer {
@@ -582,6 +601,17 @@ pre {
         height: 50px;
         margin-left: 10px;
     }
+    
+    .wechat-container {
+        bottom: 100px;
+        right: 30px;
+    }
+
+    .wechat-icon {
+        width: 50px;
+        height: 50px;
+        margin-left: 5px;
+    }
 
     .footer {
         bottom: 30px;
@@ -627,6 +657,17 @@ pre {
     .whatsapp-icon {
         width: 40px;
         height: 40px;
+        margin-left: 5px;
+    }
+    
+    .wechat-container {
+        bottom: 100px;
+        right: 30px;
+    }
+
+    .wechat-icon {
+        width: 50px;
+        height: 50px;
         margin-left: 5px;
     }
 

@@ -13,6 +13,16 @@ class General_controller extends CI_Controller
     protected $additional_js = "";
 
     protected $hide_cart = false;
+
+    protected $admin_menu_active = array(
+        "what" => "",
+        "buy" => "",
+        "sell" => "",
+        "testimony" => "",
+        "testimony_trading" => "",
+        "faq" => "",
+        "contact" => ""
+    );
    
     public function __construct()
     {
@@ -84,5 +94,10 @@ class General_controller extends CI_Controller
         } else {
             show_404();
         }
+    }
+
+    public function set_admin_menu_active($menu) {
+        $this->admin_menu_active[$menu] = " active";
+        return $this->admin_menu_active;
     }
 }
