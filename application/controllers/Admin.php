@@ -15,7 +15,7 @@ class Admin extends General_controller {
 	{
         $what = $this->Admin_model->get_what()[0]->what_text;
         $data = array(
-			"title" => "Admin &mdash; Home",
+			"title" => "Admin &mdash; What We Do",
 			"menu_active" => parent::set_admin_menu_active("what"),
             "menu_title" => "What We Do",
             "what" => $what
@@ -47,7 +47,7 @@ class Admin extends General_controller {
 	{
         $buy = $this->Admin_model->get_buy()[0]->buy_text;
         $data = array(
-			"title" => "Admin &mdash; Home",
+			"title" => "Admin &mdash; Buy",
 			"menu_active" => parent::set_admin_menu_active("buy"),
             "menu_title" => "Buy",
             "buy" => $buy
@@ -79,7 +79,7 @@ class Admin extends General_controller {
 	{
         $sell = $this->Admin_model->get_sell()[0]->sell_text;
         $data = array(
-			"title" => "Admin &mdash; Home",
+			"title" => "Admin &mdash; Sell",
 			"menu_active" => parent::set_admin_menu_active("sell"),
             "menu_title" => "Sell",
             "sell" => $sell
@@ -99,6 +99,70 @@ class Admin extends General_controller {
             echo json_encode(array(
                 "status" => "success",
                 "data" => $sell
+            ));
+        } else {
+            echo json_encode(array(
+                "status" => "error"
+            ));
+        }
+    }
+
+    public function faq()
+	{
+        $faq = $this->Admin_model->get_faq()[0]->faq_text;
+        $data = array(
+			"title" => "Admin &mdash; FAQ",
+			"menu_active" => parent::set_admin_menu_active("faq"),
+            "menu_title" => "FAQ",
+            "faq" => $faq
+		);
+		
+		parent::adminview("admin_faq", $data);
+    }
+
+    public function update_faq() {
+        $faq = $this->input->post("faq");
+        $data = array(
+            "faq_text" => $faq
+        );
+        $affected_rows = $this->Admin_model->update_faq($data);
+        if ($affected_rows > 0) {
+            $faq = $this->Admin_model->get_faq()[0]->faq_text;
+            echo json_encode(array(
+                "status" => "success",
+                "data" => $faq
+            ));
+        } else {
+            echo json_encode(array(
+                "status" => "error"
+            ));
+        }
+    }
+
+    public function contact()
+	{
+        $contact = $this->Admin_model->get_contact()[0]->contact_text;
+        $data = array(
+			"title" => "Admin &mdash; Contact",
+			"menu_active" => parent::set_admin_menu_active("contact"),
+            "menu_title" => "Contact",
+            "contact" => $contact
+		);
+		
+		parent::adminview("admin_contact", $data);
+    }
+
+    public function update_contact() {
+        $contact = $this->input->post("contact");
+        $data = array(
+            "contact_text" => $contact
+        );
+        $affected_rows = $this->Admin_model->update_contact($data);
+        if ($affected_rows > 0) {
+            $contact = $this->Admin_model->get_contact()[0]->contact_text;
+            echo json_encode(array(
+                "status" => "success",
+                "data" => $contact
             ));
         } else {
             echo json_encode(array(

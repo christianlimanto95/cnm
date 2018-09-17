@@ -19,6 +19,10 @@
 	<a href="<?php echo base_url("admin"); ?>" class="menu<?php echo $menu_active["what"]; ?>">What We Do</a>
     <a href="<?php echo base_url("admin/buy"); ?>" class="menu<?php echo $menu_active["buy"]; ?>">Buy</a>
     <a href="<?php echo base_url("admin/sell"); ?>" class="menu<?php echo $menu_active["sell"]; ?>">Sell</a>
+    <a href="<?php echo base_url("admin/testimony"); ?>" class="menu<?php echo $menu_active["testimony"]; ?>">Testimony</a>
+    <a href="<?php echo base_url("admin/testimony_trading"); ?>" class="menu<?php echo $menu_active["testimony_trading"]; ?>">Testimony (Trading)</a>
+    <a href="<?php echo base_url("admin/faq"); ?>" class="menu<?php echo $menu_active["faq"]; ?>">FAQ</a>
+    <a href="<?php echo base_url("admin/contact"); ?>" class="menu<?php echo $menu_active["contact"]; ?>">Contact Us</a>
 </div>
 <div class="header">
 	<div class="menu-title"><?php echo $menu_title; ?></div>

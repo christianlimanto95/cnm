@@ -37,6 +37,26 @@ class Admin_model extends CI_Model
         return $this->db->affected_rows();
     }
 
+    public function get_faq() {
+        return $this->db->get("faq")->result();
+    }
+
+    public function update_faq($data) {
+        $this->db->set("faq_text", $data["faq_text"]);
+        $this->db->update("faq");
+        return $this->db->affected_rows();
+    }
+
+    public function get_contact() {
+        return $this->db->get("contact")->result();
+    }
+
+    public function update_contact($data) {
+        $this->db->set("contact_text", $data["contact_text"]);
+        $this->db->update("contact");
+        return $this->db->affected_rows();
+    }
+
     public function delete_from_table($data) {
         $this->db->where($data["table_name"] . "_id", $data["id"]);
         $this->db->set("status", 0);
